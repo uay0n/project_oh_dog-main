@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강아지 패션 > 몽셸 패딩 하네스 올인원 | 오늘의 집</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./product_list.css">
+    <script src="./list.js" defer></script>
+</head>
+<body>
+    <main>
+        <div class="item_detail flex-r-start">
+            <div class="left_thum flex-r-start">
+                <div class="small_thum flex-col">
+                    <p class="small"><img src="./dog_images/small1.jpg" alt=""></p>
+                    <p class="small"><img src="./dog_images/small2.jpg" alt=""></p>
+                </div>
+                <div class="big_thum"><img src="./dog_images/big1.jpg" alt=""></div>
+            </div>
+            <div class="right_container flex-c-start">
+                <p class="brand">울리</p>
+                <h1>몽셸 패딩 하네스 올인원 7size 5colors</h1>
+                <p>28% <del>55,900원</del></p>
+                <p><em>39,900</em>원</p>
+                <dl class="benefit">
+                    <dt>혜택</dt>
+                    <dd>40p 적립(WELCOME 0.1% 적립)</dd>
+                    <dt>배송</dt>
+                    <dd>3,000원 선결제</dd>
+                    <dd>일반택배</dd>
+                    <dd>제주도/도서산간 지역 3,000원</dd>
+                </dl>
+                <form action="#" method="get" id="order_frm" class="flex-c-start">
+                    <!-- data-* 속성 -->
+                    <!-- select 태그 내 data 속성의 존재이유 : 사용자가 선택한 옵션이 저장될 위치 -->
+                    <select name="color" id="color" data-color="">
+                        <option value="">색상</option>
+                        <option value="red">스카이블루 (39,900 ~ 39,990원)</option>
+                        <option value="blue">딸기 (39,900원)</option>
+                    </select>
+                    <select name="size" id="size" data-size="">
+                        <option value="">사이즈</option>
+                        <option value="s">S (39,900원)</option>
+                        <option value="m">SM (39,900원)</option>
+                        <option value="m" disabled>M (39,900원) / 품절</option>
+                    </select>
+                    <span class="opt_result flex-c-start">
+                        <span class="result">색상: 딸기 / 사이즈: SM</span>
+                        <button type="button" class="close">X</button>
+                        <span>
+                            <button class="minus">-</button>
+                            <input type="text" class="num" data-num="1" value="0" readonly>
+                            <button class="plus">+</button>
+                        </span>
+                        <span class="price" data-price=""><em>0</em>원</span>
+                    </span>
+                    <p class="total_price flex-r-between" data-total-price=""><span>주문금액</span><em>0원</em></p>
+                    <button type="button" id="order_btn">주문하기</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,25 @@
+/*reset*/
+/*1. 높이비율이 100%로 디자인된 웹 사이트의 경우*/
+html, body {height:100%;}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+* {box-sizing:border-box;}
+html,body,h1,h2,h3,h4,h5,h6,p,a,dl,dt,dd,
+ul,ol,li,table,tr,td,th,thead,tbody,tfoot,
+form,fieldset,legend,input,button,option,select,
+textarea,img,video,em,span,strong,q,blockqute,
+div,section,article,aside,header,nav,footer,
+address, label {
+    letter-spacing:-0.01em;
+/*  font-family: 'Playfair Display SC', serif;*/
+    font-family: 'Noto Sans KR', sans-serif;
+    margin:0; padding:0; line-height:1.0;
+    font-size:100%; font-style:normal;
+    font-weight:normal; border:0;
+}
+ul,ol,li {list-style:none;}
+table,tr,td,th {border-collapse: collapse;}
+a {text-decoration:none; color:#000;}
+legend {display:none;}
+.skip {display:none;}
+button {cursor: pointer;}
