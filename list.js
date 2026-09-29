@@ -41,7 +41,7 @@ function opt_y(opt1, opt2){
     Boolean(colorSelect.dataset.color) && Boolean(sizeSelect.dataset.size) ? (()=>{
         if(sizeSelect.selectedIndex>0 && colorSelect.selectedIndex > 0)
         opt_result.style.display = 'flex'
-        result_val.textContent = `${opt1} / ${opt2}`;
+        result_val.textContent = `색상 : ${opt1} / 사이즈 : ${opt2}`;
         result_num.value = 1;
         result_price.textContent = price.toLocaleString('ko-kr');
         totalPrice.children[1].textContent = price.toLocaleString('ko-kr')+'원';
